@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "foast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chanoo/Foast",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8cd1e2afbbc732389036b590ed9ea3a1f3d19d4d"
+      }
+    }
+  ],
+  "version" : 2
+}
