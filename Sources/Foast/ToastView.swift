@@ -14,7 +14,11 @@ struct ToastMessageView: View {
     
     var body: some View {
         Text(message)
+            .multilineTextAlignment(.center)
+            .lineLimit(nil)
+            .fixedSize(horizontal: false, vertical: true)
             .padding(20)
+            .frame(maxWidth: UIScreen.main.bounds.width - 40)
             .background(BlurView(style: .systemUltraThinMaterial))
             .cornerRadius(40)
     }
