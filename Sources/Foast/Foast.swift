@@ -45,7 +45,9 @@ public class Foast {
                 let hostingController = UIHostingController(rootView: toastView)
                 hostingController.view.backgroundColor = .clear
                 hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+                hostingController.view.window?.windowLevel = UIWindow.Level.alert + 1
                 mainWindow.addSubview(hostingController.view)
+                mainWindow.bringSubviewToFront(hostingController.view)
 
                 let bottomOffset: CGFloat = 140
                 NSLayoutConstraint.activate([
